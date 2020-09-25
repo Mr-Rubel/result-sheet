@@ -1,0 +1,22 @@
+input[type="text"] {
+    width: 104px;
+    margin-left: -26px;
+    text-align: center;
+}
+.h1, h1 {
+    font-size: 2.5rem;
+    margin: auto;
+    color: #ff008d;
+    border-bottom: 3px solid red;
+}
+thead#table {
+    text-align: right;
+}
+input#total-input {
+    margin-right: 100px;
+    text-align: center;
+}
+input#gps-input {
+    margin-right: 100px;
+    text-align: center;
+}

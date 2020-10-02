@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="mark.css">
+    <title>Mark-sheet</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Enter your marks number</h1>
+        </div>
+        <div class="row">
+                .<table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">Subject Name</th>
+                      <th scope="col">Theory</th>
+                      <th scope="col">Practical</th>
+                      <th scope="col">MCQ</th>
+                      <th scope="col">CGPA</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Bangla 1st</th>
+                      <td><input type="text" id="b_1st_theory" placeholder="max 60"></td>
+                      <td><input type="text" id="b_1st_prc" placeholder="No" readonly></td>
+                      <td><input type="text" id="b_1st_mcq" placeholder="max 40" maxlength="40"></td>
+                      <td><input type="text" id="b_1st_total" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Bangla 2nd</th>
+                      <td><input type="text" id="b_2nd_theory" placeholder="max 60"></td>
+                      <td><input type="text" id="b_2nd_prc" placeholder="No" readonly></td>
+                      <td><input type="text" id="b_2nd_mcq" placeholder="max 40"></td>
+                      <td><input type="text" id="b_2nd_total" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">English 1st</th>
+                      <td><input type="text" id="e_1st_theory"></td>
+                      <td><input type="text" id="e_1st_prc" placeholder="No" readonly></td>
+                      <td><input type="text" id="e_1st_mcq" placeholder="No" readonly></td>
+                      <td><input type="text" id="e_1st_total" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">English 2nd</th>
+                      <td><input type="text" id="e_2nd_theory"></td>
+                      <td><input type="text" id="e_2nd_prc" placeholder="No" readonly></td>
+                      <td><input type="text" id="e_2nd_mcq" placeholder="No" readonly></td>
+                      <td><input type="text" id="e_2nd_total" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Mathmatics</th>
+                      <td><input type="text" id="math_theory" placeholder="max 60"></td>
+                      <td><input type="text" id="math_prc" placeholder="No"></td>
+                      <td><input type="text" id="math_mcq" placeholder="max 40"></td>
+                      <td><input type="text" id="math_total" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">ICT</th>
+                      <td><input type="text" id="ict_theory" placeholder="max 40"></td>
+                      <td><input type="text" id="ict_prc" placeholder="max 20"></td>
+                      <td><input type="text" id="ict_mcq" placeholder="max 40"></td>
+                      <td><input type="text" id="ict_total" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">History</th>
+                      <td><input type="text" id="hist_theory" placeholder="max 60"></td>
+                      <td><input type="text" id="hist_prc" placeholder="No" readonly></td>
+                      <td><input type="text" id="hist_mcq" placeholder="max 40"></td>
+                      <td><input type="text" id="hist_total" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Geography</th>
+                      <td><input type="text" id="geo_theory" placeholder="max 60"></td>
+                      <td><input type="text" id="geo_prc" placeholder=""></td>
+                      <td><input type="text" id="geo_mcq" placeholder="max 40"></td>
+                      <td><input type="text" id="geo_total" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Islamik studies</th>
+                      <td><input type="text" id="dhormo_theory"></td>
+                      <td><input type="text" id="dhormo_prc" readonly></td>
+                      <td><input type="text" id="dhormo_mcq"></td>
+                      <td><input type="text" id="dhormo_total" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Biology</th>
+                      <td><input type="text" id="bio_theory"></td>
+                      <td><input type="text" id="bio_prc"></td>
+                      <td><input type="text" id="bio_mcq"></td>
+                      <td><input type="text" id="bio_total" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Chemestry</th>
+                      <td><input type="text" id="chem_theory"></td>
+                      <td><input type="text" id="chem_prc"></td>
+                      <td><input type="text" id="chem_mcq"></td>
+                      <td><input type="text" id="chem_total" readonly></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Physical Excercise</th>
+                      <td><input type="text" id="phy_theory"></td>
+                      <td><input type="text" id="phy_prc" readonly></td>
+                      <td><input type="text" id="phy_mcq"></td>
+                      <td><input type="text" id="phy_total" readonly></td>
+                    </tr>
+                  </tbody>
+                </table>
+               <div class="container">
+                <div class="row">
+                    <table  class="table table-borderless">
+                      <thead id="table">
+                        <tr>
+                          <th id="gpa-text" scope="col"> <p id="gpa"> CGPA/Grade</p><input id="gpa-input" type="text" readonly></th>
+                          <th id="total-text" scope="col"> <p id="total-pera"> Total Marks</p> <input id="total-input" type="text" readonly> </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                          <td><input type="button" id="result" onclick="result_btn()" class="btn btn-success" value="SUBMIT"></td>
+                      </tbody>
+                    </table>
+                </div>
+               </div>
+            </div>
+        </div>
+    <script src="mark.js"></script>
+</body>
+</html>
